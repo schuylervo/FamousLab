@@ -5,6 +5,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/style.css" />
 <title>Complete inventors list</title>
 </head>
 <body>
@@ -12,12 +14,12 @@
 Complete Inventors List
 </h1>
 
-<table>
+<table class="table table-striped">
 			<thead>
 				<tr>
-					<th>Name</th><th>Innovation</th><th>Year</th>
+					<th scope="col">Name</th scope="col"><th>Innovation</th scope="col"><th>Year</th>
 				</tr>
-			</thead>
+			</thead class="thead-light">
 			<tbody>
 				<c:forEach var="completes" items="${ complete }">
 				<tr>
@@ -33,7 +35,7 @@ Complete Inventors List
 
 
 <p>
-<a href="/">Go Home</a>
+<a class="btn btn-primary" href="/">Go Home</a>
 </p>
 </body>
 </html>
